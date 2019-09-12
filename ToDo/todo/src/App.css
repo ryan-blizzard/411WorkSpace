@@ -1,0 +1,61 @@
+.App {
+  text-align: center;
+}
+header{
+ 
+  background-repeat: no-repeat;
+  background-size: 100vh;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite .9s linear;
+  height: 30vmin;
+  pointer-events: none;
+}
+.App-logo1 {
+  animation: App-logo-spin1 infinite .9s linear;
+  height: 30vmin;
+  pointer-events: none;
+}
+
+#btn1{
+  margin: 2em;
+  background: #fe1;
+  border-radius: 50%;
+  height: 90px
+}
+
+.App-header {
+  background: url(./StyledCat.jpg);
+  background-color:black;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+
+@keyframes App-logo-spin1 {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
