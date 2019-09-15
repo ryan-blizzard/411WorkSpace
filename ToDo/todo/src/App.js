@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Header from './components/Header';
-import ToDo from './components/ToDo'
+import Button from './components/Button'
+
 
 
 class App extends Component {
@@ -45,19 +46,19 @@ formSubmit = event => {
         <img src={logo} className="App-logo" alt="logo" /> 
         <img src={logo} className="App-logo1" alt="logo" />
         </div>
-     <ToDo/>
-     
+
+
     <form onSubmit={this.formSubmit}>
       <input value={this.state.input} onChange={this.inputUpdate}/>
       <button id='btn1'>Bannana
       </button>
     </form>
 
-     <ul>
-     {this.state.items.map((item , index)=>{
-      return <li key={index}>{this.state.items[index]}   <button id='btn1' onClick={this.deleteTodo.bind(this, item)}>monkey</button> </li>
-     })}
-     </ul>
+    <div>
+    {this.state.items.map((item , index)=>{
+      return <p key={index}>{this.state.items[index]} <Button/>  <button id='btn1' onClick={this.deleteTodo.bind(this, item)}>monkey</button> </p>
+    })}
+    </div>
       </header>
     </div>
   );

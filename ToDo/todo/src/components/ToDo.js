@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import DeleteItem from './Delete'
 
 class ToDo extends Component {
     state = {
@@ -33,7 +34,7 @@ submitTodo = () => {
                     <button onClick={this.submitTodo}>Doin Stuff n Things</button>
               
                 {this.state.todos.map((todo, index) => {
-                    return <p key={index}>{todo}</p>
+                    return <p key={index}>{todo}  <DeleteItem/></p>
                     })
         }
               

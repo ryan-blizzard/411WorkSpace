@@ -37,8 +37,54 @@ header{
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  flex-direction: row;
+}
+
+.buttonTrue {
+  /* display: inline-block; */
+  /* padding: 15px 25px; */
+  font-size: 10px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #000;
+  background-color: green;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px #999;
+}
+
+.buttonFalse {
+  /* display: inline-block; */
+  /* padding: 15px 25px; */
+  font-size: 10px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: red;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px #999;
+}
+
+
+
+
+
+
+ 
+
+
+p{
+  display: flex;
+  flex-direction: row
 }
 
 @keyframes App-logo-spin {
