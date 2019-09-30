@@ -22,6 +22,8 @@ export default function InputSlider(props) {
   const handleSliderChange = (event, newValue) => {
     if(value >= 80){
       props.parentfun({slider: true})
+    } if (value <= 80){
+      props.parentfun({slider: false})
     }
     setValue(newValue);
   };

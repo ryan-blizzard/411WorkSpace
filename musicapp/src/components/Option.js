@@ -19,7 +19,7 @@ selectEmpty: {
 },
 }));
 
-export default function NativeSelects() {
+export default function NativeSelects(props) {
     const classes = useStyles();
     const [state, setState] = React.useState({
     age: '',
@@ -31,7 +31,12 @@ export default function NativeSelects() {
 
 
 const handleChange = name => event => {
-   
+    if(event.target.value > 20) {
+        props.parentfun({drop: true})
+    } if (event.target.value < 20){
+        props.parentfun({drop: false})
+    }
+
     setState({
     ...state,
     [name]: event.target.value,

@@ -88,7 +88,7 @@ switchClick = () => {
             <br />
             {'"a content smile"'}
         </Typography>
-        <NativeSelects parentfun2={this.handleKids} />
+        <NativeSelects parentfun={this.handleKids} />
     </CardContent>
 </Card>
 </div>
@@ -98,6 +98,7 @@ switchClick = () => {
 {this.state.switch ? (<iframe title='howdy' width="560" height="315" src="https://www.youtube.com/embed/7DYjfjaZGas" frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>)
 : <p></p>}
 {this.state.slider ? (<h5>Can You Hear Me Now?!</h5>) : <p></p>}
+{this.state.drop ? (<h1>More Cow Bell!!</h1>) : <p></p>}
 </div>
 
 </div>
