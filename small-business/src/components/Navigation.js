@@ -39,13 +39,13 @@ class Navigation extends Component  {
                         <Link onClick={this.guestClick} to="/listbiz">Listing</Link>
                     </li>
                     <li className="nav-list-item">
-                    <Link onClick={this.switchClick} to="/Login">{this.state.login ? 'login' : 'logout'}</Link>
+                    <Link onClick={this.switchClick} to="/Login">{this.state.login ? 'logout' : 'login'}</Link>
                     </li>
                 </ul>
             </Toolbar>
         </AppBar>
-    {this.state.login ? <SnackbarContent  message="Login to Customize Your ATXinsider page"  /> : 
-    <SnackbarContent  message="Logout"  />}
+    {this.state.login ? <SnackbarContent  message="Logout"  /> : 
+    <SnackbarContent  message="Login to Customize Your Page"  />}
         
     
         
