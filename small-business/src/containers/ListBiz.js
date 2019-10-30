@@ -1,6 +1,7 @@
 import { connect } from 'react-redux'
 import ListBiz from '../components/ListBiz'
 import {removeBusiness} from '../redux/actions'
+
 const mapStateToProps = (state) => {
     return {
         business: state.business,

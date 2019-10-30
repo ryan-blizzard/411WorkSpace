@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 // import { Redirect } from 'react-router'
+import { withRouter } from 'react-router-dom';
 import {
   TextField,
   Button,
@@ -21,13 +22,13 @@ class App extends Component {
 
   login = (e) => {
     e.preventDefault()
+    const { history } = this.props;
     document.cookie=
     'loggedIn=true;max-age = 60*1000'
     // set cookie here
     // set loggedIn = true and max-age = 60*1000 (one minute)
-    window.location.replace("/listBiz")
-    
-    
+    this.props.loginUser('test')
+    history.push("/listBiz")
 }
 
     render() {
@@ -63,4 +64,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default withRouter(App);

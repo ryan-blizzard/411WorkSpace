@@ -22,7 +22,9 @@ const ListBiz = props => {
     <div className="wrapper">
         <p>Grapple with the Natives</p>
         <h4>Atx Local Insiders</h4>
-        <AddBusiness  bizTotal={props.addBusiness}/> 
+        {props.user.username && <AddBusiness  
+        bizTotal={props.addBusiness}/> 
+        }
 
 
     <Table>
@@ -44,9 +46,9 @@ const ListBiz = props => {
                 <TableCell> {business1['address']}</TableCell>
                 <TableCell> {business1['hours']}</TableCell>
                 <TableCell>
-                <DeleteIcon 
-                onClick={() => props.removeBusiness(idx)}
-                className="icon"/>
+                {props.user.username && <DeleteIcon 
+                    onClick={() => props.removeBusiness(idx)}
+                    className="icon"/>}
                 </TableCell>
             </TableRow>
             ))}

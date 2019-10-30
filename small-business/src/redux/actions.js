@@ -11,3 +11,10 @@ export const removeBusiness = (index) => {
         value: index
     }
 }
+
+export const loginUser = (username) => {
+    return {
+        type: 'LOGIN',
+        value: username
+    }
+}
