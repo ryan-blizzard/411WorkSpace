@@ -1,0 +1,65 @@
+.App {
+display: flex;
+flex-direction: column;
+}
+.login-form{
+  display: flex;
+  flex-direction: column;
+  margin: 2em;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+.nav-list{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white
+
+}
+.nav-list-item{
+  display: flex;
+  justify-content: space-between;
+  color: whitesmoke
+}
+a{
+  color:black;
+  display: flex;
+  margin: 10px;
+  text-decoration: none
+}
+.MuiAppBar-colorPrimary{
+  background-color: mediumseagreen !important
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  padding: 2em;
+}
+.box{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-items: center; 
+}
+.icon{
+  color: red;
+}

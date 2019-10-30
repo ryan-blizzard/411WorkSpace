@@ -1,0 +1,17 @@
+import { connect } from 'react-redux'
+import ListBiz from '../components/ListBiz'
+import {removeBusiness} from '../redux/actions'
+const mapStateToProps = (state) => {
+    return {
+        business: state.business,
+        user: state.user
+    }
+}
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        removeBusiness: (index) => dispatch(removeBusiness(index))
+    }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(ListBiz)
